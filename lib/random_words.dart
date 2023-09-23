@@ -24,7 +24,7 @@ class RandomWordsState extends State<RandomWords> {
      final random = new Random();
      final word1i = random.nextInt(myWords.length);
      var word2i = random.nextInt(myWords.length);
-     if (word1i == word2i) {word2i = random.nextInt(myWords.length);}
+     while (word1i == word2i) {word2i = random.nextInt(myWords.length);}
      final generatedpair = WordPair(myWords[word1i],myWords[word2i]);
      generatedWords.add(generatedpair);
     }
@@ -92,7 +92,7 @@ class RandomWordsState extends State<RandomWords> {
             appBar: AppBar(
               backgroundColor: primaryColor,
               centerTitle: true,
-              title: const Text('Saved WordPairs')),
+              title: const Text('Saved Word Pairs')),
             body: ListView(children: divided)
           );
         }
@@ -105,7 +105,7 @@ class RandomWordsState extends State<RandomWords> {
       appBar: AppBar(
         backgroundColor: primaryColor,
         centerTitle: true,
-        title: const Text('Word Pair Gen'),
+        title: const Text('Word Pair Generator'),
         actions: <Widget>[
           IconButton(
             icon: const Icon(Icons.list),
