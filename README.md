@@ -1,16 +1,8 @@
 # wordpairgen
 
-A new Flutter project.
+A Flutter project created for  CSC-184 at Hofstra University.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This app follows [this tutorial](https://www.youtube.com/watch?v=1gDhl4leEzA) closely. The differences are:
+ - substituted "Like" Icon widgets for CircleAvatar widgets, which use a locally stored image
+ - created a new function ```_generateMyPairs()```, which creates words based on a list defined in the file, instead of ```generateRandomPairs()``` from english_words library
+ - uses custom colors (cyan) for the appBars
