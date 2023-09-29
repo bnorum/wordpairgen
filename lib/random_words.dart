@@ -9,6 +9,7 @@ import "dart:math";
 
 
 const primaryColor = Colors.cyan;
+
 class RandomWords extends StatefulWidget {
   const RandomWords({super.key});
 
